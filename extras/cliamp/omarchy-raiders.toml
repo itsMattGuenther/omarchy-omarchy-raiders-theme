@@ -1,0 +1,9 @@
+# cliamp theme — copy to ~/.config/cliamp/themes/omarchy-raiders.toml
+# Same palette as colors.toml: plum-black ground, bone cream type, gold accent.
+bg = "#16101f"
+accent = "#f5c518"
+bright_fg = "#f8f3e6"
+fg = "#9a8fa8"
+green = "#6cc177"
+yellow = "#f5c518"
+red = "#f4595e"
