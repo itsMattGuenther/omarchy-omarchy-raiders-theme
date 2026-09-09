@@ -1,4 +1,4 @@
-# 🌈 Omarchy Raiders
+# 🤖 Omarchy Raiders
 
 An [Omarchy](https://omarchy.org) theme, a tribute to the retro poster art of
 ARC Raiders: plum-black space, bone-cream type, and a rainbow stripe cutting
