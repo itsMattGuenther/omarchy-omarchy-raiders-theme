@@ -34,7 +34,7 @@ fi
 mkdir -p "$OZ_DIR" "$HOME/.config/cliamp/themes"
 cp "$HERE/cliamp/omarchy-raiders.toml" "$HOME/.config/cliamp/themes/omarchy-raiders.toml"
 
-# The About logo is plain text; tint each line with the theme's coral accent
+# The About logo is plain text; tint each line with the theme's gold accent
 # so it stays coloured under Omarchy's default fastfetch config.
 sed 's/^/\x1b[38;2;245;197;24m/' "$HERE/art/omarchy-raiders-ridge.txt" > "$OZ_DIR/about.txt"
 cp "$HERE/greeting.sh" "$OZ_DIR/greeting.sh"

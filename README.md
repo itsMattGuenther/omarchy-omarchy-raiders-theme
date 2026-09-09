@@ -1,22 +1,30 @@
-# __EMOJI__ Omarchy Raiders
+# 🌈 Omarchy Raiders
 
-An [Omarchy](https://omarchy.org) theme. __ONE_LINE_PITCH__
-Dark first, readable always.
+An [Omarchy](https://omarchy.org) theme, a tribute to the retro poster art of
+ARC Raiders: plum-black space, bone-cream type, and a rainbow stripe cutting
+across it. Dark first, readable always.
 
 ![Desktop preview](preview.png)
 
 ## ✨ What you get
 
-- **Palette** __PALETTE_SENTENCE__ Every colour clears its contrast target on
-  every background — body text sits near __FG_RATIO__:1, and `muted`, the grey
-  used for code comments, holds at __MUTED_RATIO__:1 instead of the usual
-  3-ish.
+- **Palette** sampled from an ARC Raiders poster — a plum-black ground that
+  reads as black but leans purple, the bone cream of the logo lettering for
+  text, a gold accent, and the poster's rainbow stripe supplying the terminal
+  hues. Every colour clears its contrast target on every background — body
+  text sits near 14.4:1, and `muted`, the grey used for code comments, holds
+  at 6.1:1 instead of the usual 3-ish.
 - **Everything themed at once**: terminals (foot, Alacritty, Kitty, Ghostty),
   Neovim, btop, Helix, the Omarchy bar, launcher, notifications, lock screen,
   Chromium, VS Code, Obsidian, Claude Code, and the keyboard backlight.
-- **Window borders** __BORDER_SENTENCE__
-- **__N__ 4K wallpapers** __WALLPAPER_SENTENCE__
-- **Optional extras**: __EXTRAS_SENTENCE__
+- **Window borders** carry the whole stripe — red into gold into green into
+  aqua — around the focused window.
+- **Five 4K wallpapers**: a rainbow arc over deep navy, a low horizon under
+  the stripe, and an orange-and-violet nebula, most of them with and without
+  the Omarchy wordmark.
+- **Optional extras**: Braille art of a lone raider greeting you in every new
+  terminal, the same figure on a ridge under the arc on the About screen, and a
+  matching theme for the cliamp music player.
 
 ## 📦 Install
 
@@ -35,7 +43,7 @@ omarchy theme bg next        # cycle wallpapers
 
 ![Wallpapers](docs/wallpapers.jpg)
 
-__N__ variants live in `backgrounds/`, all 3840x2160. They sort by filename, so
+Five variants live in `backgrounds/`, all 3840x2160. They sort by filename, so
 the numbered prefixes decide the order `omarchy theme bg next` walks. Add your
 own next to them, or drop extra images into
 `~/.config/omarchy/backgrounds/omarchy-raiders/` to keep them out of the theme folder.
@@ -44,7 +52,10 @@ own next to them, or drop extra images into
 
 ![The theme's Braille art](docs/preview-art.png)
 
-__ART_SENTENCE__
+Both pieces are drawn as vectors and then converted to Braille dots, never
+traced from a photograph. A Braille character is two dots by four, so a piece
+this wide is only about 112 dots across — enough for deliberate shapes and
+nothing else.
 
 Greeting you in every new terminal:
 
@@ -110,7 +121,11 @@ To remove all of it:
 
 ## 🙏 Credits
 
-- __CREDITS__
+- Colours sampled from an ARC Raiders promotional poster. This is an
+  unofficial tribute and is not affiliated with, endorsed by, or associated
+  with Embark Studios or Nexon; ARC Raiders is their trademark. No artwork
+  from the game is included here — the wallpapers and the Braille art are
+  original.
 - Built on Omarchy's theme system by DHH and the Omarchy community.
 
 ## 🤝 Contributing
