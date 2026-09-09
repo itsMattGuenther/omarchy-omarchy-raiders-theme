@@ -11,7 +11,7 @@ across it. Dark first, readable always.
 - **Palette** sampled from an ARC Raiders poster — a plum-black ground that
   reads as black but leans purple, the bone cream of the logo lettering for
   text, a gold accent, and the poster's rainbow stripe supplying the terminal
-  hues. Every colour clears its contrast target on every background — body
+  hues. Every color clears its contrast target on every background — body
   text sits near 14.4:1, and `muted`, the grey used for code comments, holds
   at 6.1:1 instead of the usual 3-ish.
 - **Everything themed at once**: terminals (foot, Alacritty, Kitty, Ghostty),
@@ -48,30 +48,7 @@ the numbered prefixes decide the order `omarchy theme bg next` walks. Add your
 own next to them, or drop extra images into
 `~/.config/omarchy/backgrounds/omarchy-raiders/` to keep them out of the theme folder.
 
-The three new scenes form **The Listening Station** collection:
-
-| File | Scene |
-| --- | --- |
-| `05_raiders_listening_field.jpg` | A lone radio telescope beneath dusty violet starlight |
-| `06_raiders_penumbra.jpg` | A dark planetary limb catching gold and cyan sunlight |
-| `07_raiders_afterlight.jpg` | A distant observatory above a warm, fading horizon |
-
-These three were made with built-in AI image generation and exported to 4K
-using Lanczos upscaling from 1672x941 originals. They are 4K files, not native
-4K generations. The four poster-style wallpapers are unchanged. See
-[artwork provenance](docs/artwork.md) and the
-[complete generation prompts](docs/wallpaper-prompts.json).
-
 ## 🖼️ The art
-
-![The theme's Braille art](docs/preview-art.png)
-
-**Still listening** replaces the figure with a delicate parabolic dish, a
-cream crescent and a broken spectral orbit. Its companion, **The listening
-station**, adds a distant observatory and layered terrain. Both are original
-vector drawings converted to Braille, without tracing a photograph or game
-asset. A Braille character is two dots by four; the shapes are drawn for that
-grid instead of shrinking a detailed illustration into noise.
 
 Rendered terminal greeting (56 columns by 18 rows):
 
@@ -83,7 +60,7 @@ fastfetch's logo colour. The greeting uses the full theme palette:
 
 ![About screen](docs/preview-about.png)
 
-Both live in `extras/art/` as plain text and ANSI colour versions, with their
+Both live in `extras/art/` as plain text and ANSI color versions, with their
 SVG sources and the converter alongside. Rendering tools are needed only
 when editing the art, never when opening a terminal.
 
@@ -94,12 +71,6 @@ when editing the art, never when opening a terminal.
 A matching theme for the [cliamp](https://github.com/omacom-io/cliamp) music
 player. The theme hook switches cliamp to it while Omarchy Raiders is active and puts
 your previous cliamp theme back when you switch away.
-
-## 🔐 The lock screen
-
-The lock screen (Super+Escape) shows a blurred copy of whichever wallpaper you
-are on, with the theme's colours on the password box. That is how Omarchy
-builds it, and no theme can put its own artwork there.
 
 ## 👾 Extras (optional)
 
@@ -140,7 +111,7 @@ To remove all of it:
 
 ## 🙏 Credits
 
-- Colours sampled from an ARC Raiders promotional poster. This is an
+- Colors sampled from an ARC Raiders promotional poster. This is an
   unofficial tribute and is not affiliated with, endorsed by, or associated
   with Embark Studios or Nexon; ARC Raiders is their trademark. No artwork
   from the game is included here — the wallpapers and the Braille art are
