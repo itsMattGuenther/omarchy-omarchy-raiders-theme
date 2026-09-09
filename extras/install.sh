@@ -1,7 +1,7 @@
 #!/bin/bash
 # Installs the Omarchy Raiders extras that an Omarchy theme cannot ship on its own:
 #   - cliamp music player theme    -> ~/.config/cliamp/themes/omarchy-raiders.toml
-#   - Omarchy Raiders ridgeline About logo   -> ~/.config/omarchy-raiders/about.txt (swapped in by the hook)
+#   - listening-station About logo -> ~/.config/omarchy-raiders/about.txt (swapped in by the hook)
 #   - terminal greeting            -> ~/.config/omarchy-raiders/ + one block in ~/.bashrc
 #   - theme-set hook               -> ~/.config/omarchy/hooks/theme-set.d/
 # Safe to run more than once. Run with --uninstall to remove everything it added.
@@ -34,11 +34,19 @@ fi
 mkdir -p "$OZ_DIR" "$HOME/.config/cliamp/themes"
 cp "$HERE/cliamp/omarchy-raiders.toml" "$HOME/.config/cliamp/themes/omarchy-raiders.toml"
 
-# The About logo is plain text; tint each line with the theme's gold accent
-# so it stays coloured under Omarchy's default fastfetch config.
-sed 's/^/\x1b[38;2;245;197;24m/' "$HERE/art/omarchy-raiders-ridge.txt" > "$OZ_DIR/about.txt"
+# Update the active copy before replacing our stored art. Otherwise the hook
+# would mistake the previous version for the user's original About logo and
+# overwrite the backup when extras are upgraded while this theme is active.
+ABOUT="$HOME/.config/omarchy/branding/about.txt"
+if [[ -f $OZ_DIR/about.txt && -f $ABOUT ]] && cmp -s "$OZ_DIR/about.txt" "$ABOUT"; then
+  cp "$HERE/art/omarchy-raiders-ridge.txt" "$ABOUT"
+fi
+# Omarchy measures the raw About file with wc -L, including ANSI sequences.
+# Keep this copy plain so the window fits; fastfetch supplies its logo colour.
+cp "$HERE/art/omarchy-raiders-ridge.txt" "$OZ_DIR/about.txt"
 cp "$HERE/greeting.sh" "$OZ_DIR/greeting.sh"
 cp "$HERE/art/greeting-art.txt" "$OZ_DIR/greeting-art.txt"
+cp "$HERE/art/greeting-art.ansi" "$OZ_DIR/greeting-art.ansi"
 
 remove_bashrc_block
 cat >> "$BASHRC" <<BLOCK

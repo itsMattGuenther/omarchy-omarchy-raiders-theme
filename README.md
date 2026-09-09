@@ -19,12 +19,12 @@ across it. Dark first, readable always.
   Chromium, VS Code, Obsidian, Claude Code, and the keyboard backlight.
 - **Window borders** carry the whole stripe — red into gold into green into
   aqua — around the focused window.
-- **Five 4K wallpapers**: a rainbow arc over deep navy, a low horizon under
-  the stripe, and an orange-and-violet nebula, most of them with and without
-  the Omarchy wordmark.
-- **Optional extras**: Braille art of a lone raider greeting you in every new
-  terminal, the same figure on a ridge under the arc on the About screen, and a
-  matching theme for the cliamp music player.
+- **Seven 4K wallpapers**: a rainbow arc over deep navy and a low horizon
+  under the stripe, each with and without the Omarchy wordmark, plus a
+  listening field, a planetary sunrise, and a remote observatory at dusk.
+- **Optional extras**: an original radio telescope beneath a crescent moon
+  greeting you in every new terminal, a wider listening-station landscape on
+  the About screen, and a matching theme for the cliamp music player.
 
 ## 📦 Install
 
@@ -43,31 +43,49 @@ omarchy theme bg next        # cycle wallpapers
 
 ![Wallpapers](docs/wallpapers.jpg)
 
-Five variants live in `backgrounds/`, all 3840x2160. They sort by filename, so
+Seven variants live in `backgrounds/`, all 3840x2160. They sort by filename, so
 the numbered prefixes decide the order `omarchy theme bg next` walks. Add your
 own next to them, or drop extra images into
 `~/.config/omarchy/backgrounds/omarchy-raiders/` to keep them out of the theme folder.
+
+The three new scenes form **The Listening Station** collection:
+
+| File | Scene |
+| --- | --- |
+| `05_raiders_listening_field.jpg` | A lone radio telescope beneath dusty violet starlight |
+| `06_raiders_penumbra.jpg` | A dark planetary limb catching gold and cyan sunlight |
+| `07_raiders_afterlight.jpg` | A distant observatory above a warm, fading horizon |
+
+These three were made with built-in AI image generation and exported to 4K
+using Lanczos upscaling from 1672x941 originals. They are 4K files, not native
+4K generations. The four poster-style wallpapers are unchanged. See
+[artwork provenance](docs/artwork.md) and the
+[complete generation prompts](docs/wallpaper-prompts.json).
 
 ## 🖼️ The art
 
 ![The theme's Braille art](docs/preview-art.png)
 
-Both pieces are drawn as vectors and then converted to Braille dots, never
-traced from a photograph. A Braille character is two dots by four, so a piece
-this wide is only about 112 dots across — enough for deliberate shapes and
-nothing else.
+**Still listening** replaces the figure with a delicate parabolic dish, a
+cream crescent and a broken spectral orbit. Its companion, **The listening
+station**, adds a distant observatory and layered terrain. Both are original
+vector drawings converted to Braille, without tracing a photograph or game
+asset. A Braille character is two dots by four; the shapes are drawn for that
+grid instead of shrinking a detailed illustration into noise.
 
-Greeting you in every new terminal:
+Rendered terminal greeting (56 columns by 18 rows):
 
 ![Terminal greeting](docs/preview-greeting.png)
 
-And on the About screen, sized so Omarchy's own window measurement fits around
-it:
+Rendered About layout (64 columns by 24 rows of art). The installed About file
+is plain text so Omarchy can measure its width correctly; it inherits
+fastfetch's logo colour. The greeting uses the full theme palette:
 
 ![About screen](docs/preview-about.png)
 
-Both live in `extras/art/` as plain text, with the SVG sources next to them so
-you can redraw or resize them.
+Both live in `extras/art/` as plain text and ANSI colour versions, with their
+SVG sources and the converter alongside. Rendering tools are needed only
+when editing the art, never when opening a terminal.
 
 ## 🎵 cliamp
 
@@ -117,7 +135,8 @@ To remove all of it:
 
 - `colors.toml` is the whole palette. Everything else is generated from it.
 - The Braille art is generated from `extras/art/*.svg`. Edit the vectors, then
-  re-run the converter at the same character width to keep the proportions.
+  run `python3 extras/art/render.py` (Python 3.11+, librsvg, ImageMagick).
+  See [the extras guide](extras/README.md) for dimensions and preview commands.
 
 ## 🙏 Credits
 

@@ -1,0 +1,50 @@
+[
+  {
+    "file": "backgrounds/05_raiders_listening_field.jpg",
+    "title": "The Listening Field",
+    "tool": "Built-in image_gen",
+    "date": "2026-09-09",
+    "source_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      3840,
+      2160
+    ],
+    "export": "ImageMagick Lanczos resize to cover, centered extent, JPEG quality 95, chroma 4:4:4",
+    "prompt": "Use case: stylized-concept.\nAsset type: original Linux desktop wallpaper, landscape 16:9, exact 3840x2160 pixels 4K.\nTitle for reference only, NO text in image: The Listening Field.\nCreate a beautiful restrained retrofuturist cinematic landscape with the atmosphere of a lost astronomical expedition. A small abandoned parabolic radio telescope, an ordinary real-world engineering form, stands on a distant low rocky plateau beneath an immense plum-black night sky. Off-center telescope in the lower right third, delicate dish profile aiming at a single warm distant star, tiny amber light at its base. Layered near-black mountain silhouettes occupy only the bottom fifth; most of the frame is calm deep dark negative space. Across the upper sky is a very faint, diffuse band of dusty blue-violet starlight, subtle enough for a usable desktop. Finely painted gouache and airbrushed 1970s astronomical illustration with subtle analog grain; intentional, elegant, atmospheric, exceptional composition. Avoid a generic photorealistic game screenshot. Dominant palette strictly near #16101f plum-black, #100b17 shadows, #251c34 ridge haze; restrained #eae2ce starlight, #f5c518 amber, tiny #8fd3d8 cyan and #c98ad8 dust. No bright white expanses, no obvious rainbow stripe. Preserve the very dark appearance of an Omarchy theme. Entirely original environmental design. No people, no characters, no robots, no weapons, no fictional franchise landmarks, no game assets, no game logos, no trademarks, no lettering, no watermarks, no border. Output one finished wallpaper at 3840x2160."
+  },
+  {
+    "file": "backgrounds/06_raiders_penumbra.jpg",
+    "title": "Penumbra",
+    "tool": "Built-in image_gen",
+    "date": "2026-09-09",
+    "source_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      3840,
+      2160
+    ],
+    "export": "ImageMagick Lanczos resize to cover, centered extent, JPEG quality 95, chroma 4:4:4",
+    "prompt": "Use case: stylized-concept.\nAsset type: original Linux desktop wallpaper, landscape 16:9, exact 3840x2160 pixels 4K.\nTitle for reference only, NO text in image: Penumbra.\nAn exquisite minimal deep-space astronomical painting: an enormous almost invisible dark planet with its curved limb entering from the lower right and extending beyond the frame, a thin incandescent atmospheric rim that graduates organically from muted copper-orange #f08a2a through soft gold #f5c518 to pale cyan #8fd3d8 at a tiny point of hidden sunrise. This is a planetary terminator, not a graphic rainbow stripe or logo. Subtle dusty magenta #c98ad8 atmospheric scattering fades into vast plum-black #16101f and #100b17 space. Tiny sparse bone-cream #eae2ce stars, plenty of emptiness; 85 percent dark. Planet barely lighter than background, perceptible painterly atmosphere, restrained film grain. Sophisticated vintage observatory-book illustration, tactile matte airbrush and gouache, cinematic scale with calm asymmetrical composition, not glossy plastic CGI. Keep central and upper areas dark and quiet for desktop windows. Entirely original, no recognizable franchise compositions, characters, spacecraft, logos, typography, emblems, watermark or frame. Output one beautiful finished wallpaper at 3840x2160."
+  },
+  {
+    "file": "backgrounds/07_raiders_afterlight.jpg",
+    "title": "Afterlight",
+    "tool": "Built-in image_gen",
+    "date": "2026-09-09",
+    "source_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      3840,
+      2160
+    ],
+    "export": "ImageMagick Lanczos resize to cover, centered extent, JPEG quality 95, chroma 4:4:4",
+    "prompt": "Use case: stylized-concept.\nAsset type: original Linux desktop wallpaper, landscape 16:9, exact 3840x2160 pixels 4K.\nTitle for reference only, NO text in image: Afterlight.\nA quietly breathtaking abandoned astronomical observatory seen from a distant dry basin at blue hour. A very small low concrete dome and slender simple antenna silhouettes sit far away at the left lower third, on a low dark mesa. An extremely thin warm gold horizon glows behind many overlapping plum-black ridgelines. A vast sky takes up the upper four fifths, with a single wispy veil of faint rust-orange and muted lilac cosmic dust flowing diagonally through the high sky, irregular and feathered, predominantly dark and barely luminous. A few scattered stars. Foreground sand and rock nearly black, subtle restrained relief. Evoke vintage expedition posters and hand-painted analog space illustration: elegant gouache and matte airbrush gradients, fine grain, not a busy video-game scene. Sophisticated low-key color palette from this theme: #16101f plum-black, #0a0710 foreground, #251c34 haze, #453163 distant violet, sparing #c08a62 copper and #f08a2a rust dust, #f5c518 horizon, #eae2ce stars, faint #7fa0ee blue. 80 percent calm very dark areas, beautifully legible as a daily desktop. Architecture must be original generic civilian astronomy infrastructure, no people, no robots, no weapons, no fictional franchise locations, no symbols, no rainbow emblem, no text, no wordmark, no watermark, no frame. Output one finished wallpaper at 3840x2160."
+  }
+]

@@ -4,7 +4,7 @@
 # Runs after every theme change with the new theme slug in $1.
 #
 # When Omarchy Raiders is selected: switch cliamp to its Omarchy Raiders theme and put the Omarchy Raiders
-# ridgeline in Omarchy's About logo file (~/.config/omarchy/branding/about.txt),
+# listening station in Omarchy's About logo file (~/.config/omarchy/branding/about.txt),
 # which Omarchy measures so the About window is sized to fit it.
 # When any other theme is selected: put both back the way they were.
 
