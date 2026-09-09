@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="640" viewBox="0 0 1024 640">
+  <rect width="1024" height="640" fill="white"/>
+  <!-- the arc, three bands -->
+  <path d="M 30 260 Q 512 20 994 150" fill="none" stroke="black" stroke-width="13"/>
+  <path d="M 30 306 Q 512 66 994 196" fill="none" stroke="black" stroke-width="13"/>
+  <path d="M 30 352 Q 512 112 994 242" fill="none" stroke="black" stroke-width="13"/>
+  <!-- far ridge -->
+  <path d="M 0 545 L 160 515 L 330 540 L 520 505 L 700 542 L 870 512 L 1024 538"
+        fill="none" stroke="black" stroke-width="12"/>
+  <!-- clear sky behind the figure so the far ridge reads as passing behind it -->
+  <rect x="296" y="380" width="104" height="182" fill="white"/>
+  <!-- near ridge -->
+  <path d="M 0 606 L 180 592 L 340 574 L 520 600 L 740 584 L 900 604 L 1024 596"
+        fill="none" stroke="black" stroke-width="14"/>
+  <!-- the raider: the one solid mass -->
+  <g fill="black">
+    <circle cx="348" cy="420" r="22"/>
+    <rect x="318" y="452" width="60" height="18" rx="8"/>
+    <rect x="328" y="468" width="40" height="58"/>
+    <rect x="307" y="462" width="17" height="46" rx="6"/>
+    <rect x="372" y="466" width="12" height="48" rx="6"/>
+    <rect x="332" y="524" width="13" height="52"/>
+    <rect x="356" y="524" width="13" height="52"/>
+  </g>
+</svg>

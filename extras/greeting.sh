@@ -12,6 +12,6 @@ _oz_art="${BASH_SOURCE[0]%/*}/greeting-art.txt"
 if [[ -r $_oz_art ]]; then
   mapfile -t _oz_lines < "$_oz_art"
   printf '\e[38;2;245;197;24m%s\e[0m\n' "${_oz_lines[@]}"
-  printf '\e[1;38;2;143;211;216m%s\e[0m\n\n' "        __GREETING__"
+  printf '\e[1;38;2;143;211;216m%s\e[0m\n\n' "        Topside at first light."
 fi
 unset _oz_art _oz_lines
