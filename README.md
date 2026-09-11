@@ -55,8 +55,8 @@ Rendered terminal greeting (56 columns by 18 rows):
 ![Terminal greeting](docs/preview-greeting.png)
 
 Rendered About layout (64 columns by 24 rows of art). The installed About file
-is plain text so Omarchy can measure its width correctly; it inherits
-fastfetch's logo colour. The greeting uses the full theme palette:
+is plain text so Omarchy can measure its width correctly. It inherits
+fastfetch's logo color. The greeting uses the full theme palette:
 
 ![About screen](docs/preview-about.png)
 
