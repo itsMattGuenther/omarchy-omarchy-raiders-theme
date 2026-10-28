@@ -22,9 +22,10 @@ across it. Dark first, readable always.
 - **Seven 4K wallpapers**: a rainbow arc over deep navy and a low horizon
   under the stripe, each with and without the Omarchy wordmark, plus a
   listening field, a planetary sunrise, and a remote observatory at dusk.
-- **Optional extras**: an original radio telescope beneath a crescent moon
-  greeting you in every new terminal, a wider listening-station landscape on
-  the About screen, and a matching theme for the cliamp music player.
+- **Optional extras**, in [their own repo](https://github.com/itsMattGuenther/omarchy-theme-extras/tree/main/omarchy-raiders):
+  an original radio telescope beneath a crescent moon greeting you in every new
+  terminal, a wider listening-station landscape on the About screen, and a
+  matching theme for the cliamp music player.
 
 ## 📦 Install
 
@@ -48,66 +49,20 @@ the numbered prefixes decide the order `omarchy theme bg next` walks. Add your
 own next to them, or drop extra images into
 `~/.config/omarchy/backgrounds/omarchy-raiders/` to keep them out of the theme folder.
 
-## 🖼️ The art
-
-Rendered terminal greeting (56 columns by 18 rows):
-
-![Terminal greeting](docs/preview-greeting.png)
-
-Rendered About layout (64 columns by 24 rows of art). The installed About file
-is plain text so Omarchy can measure its width correctly. It inherits
-fastfetch's logo color. The greeting uses the full theme palette:
-
-![About screen](docs/preview-about.png)
-
-Both live in `extras/art/` as plain text and ANSI color versions, with their
-SVG sources and the converter alongside. Rendering tools are needed only
-when editing the art, never when opening a terminal.
-
-## 🎵 cliamp
-
-![cliamp in the Omarchy Raiders theme](docs/preview-cliamp.png)
-
-A matching theme for the [cliamp](https://github.com/omacom-io/cliamp) music
-player. The theme hook switches cliamp to it while Omarchy Raiders is active and puts
-your previous cliamp theme back when you switch away.
-
 ## 👾 Extras (optional)
 
-Omarchy cannot install the art, the greeting or the cliamp theme from a theme
-repo, so there is a one-shot script:
+![Terminal greeting](https://github.com/itsMattGuenther/omarchy-theme-extras/raw/main/omarchy-raiders/docs/preview-greeting.png)
 
-```bash
-~/.config/omarchy/themes/omarchy-raiders/extras/install.sh
-```
-
-What it changes:
-
-- copies files into `~/.config/omarchy-raiders/` and `~/.config/cliamp/themes/`
-- adds one marked block at the end of `~/.bashrc` (a backup is kept as
-  `.bashrc.bak.omarchy-raiders`)
-- installs a theme hook, `omarchy-raiders-theme-set.sh`, that switches cliamp and the
-  About logo whenever this theme is active, and puts both back when you pick
-  another theme
-
-The hook is named after the theme rather than `theme-set.sh`, so it sits
-alongside other themes' hooks instead of overwriting them.
-
-The greeting and the About art only show while this theme is the active one,
-so other themes are left alone.
-
-To remove all of it:
-
-```bash
-~/.config/omarchy/themes/omarchy-raiders/extras/install.sh --uninstall
-```
+**Still listening**, a radio telescope beneath a crescent moon, greets you in
+every new terminal; **The listening station**, a wider landscape, takes over
+the About screen; and a matching theme dresses the cliamp music player. A
+theme can't ship the script that puts these in place, so they live in
+[omarchy-theme-extras](https://github.com/itsMattGuenther/omarchy-theme-extras/tree/main/omarchy-raiders), with install and
+uninstall steps.
 
 ## 🛠️ Hacking on it
 
 - `colors.toml` is the whole palette. Everything else is generated from it.
-- The Braille art is generated from `extras/art/*.svg`. Edit the vectors, then
-  run `python3 extras/art/render.py` (Python 3.11+, librsvg, ImageMagick).
-  See [the extras guide](extras/README.md) for dimensions and preview commands.
 
 ## 🙏 Credits
 

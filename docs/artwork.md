@@ -24,24 +24,10 @@ The exact prompts and export settings are recorded in
 
 ## Terminal artwork
 
-- **Still listening:** a crescent, a broken orbital trace, and a mesh radio
-  dish, composed for 56 columns by 18 rows.
-- **The listening station:** a wider companion with a distant dome and
-  layered terrain, composed for 64 columns by 24 rows.
-
-Both SVGs were drawn directly from geometric primitives for this project.
-They are not traced or converted from the generated wallpapers or another
-artist's image. `extras/art/render.py` produces matching plain text and ANSI
-colour files. The existing `omarchy-raiders-ridge` basename is retained for
-compatibility; the drawing itself is new.
-
-The installed About logo uses the plain text version because Omarchy's
-window sizing counts the raw file's columns. fastfetch supplies its colour.
-The terminal greeting uses the ANSI version; each row ends with a colour
-reset to avoid affecting the shell prompt.
-
-The documentation illustrations are rendered text previews, not desktop
-screenshots. The About preview uses fastfetch output.
+The Braille art for the terminal greeting and the About screen is part of the
+optional extras, which live in
+[omarchy-theme-extras](https://github.com/itsMattGuenther/omarchy-theme-extras/tree/main/omarchy-raiders) along with its
+provenance notes.
 
 ## Attribution
 
